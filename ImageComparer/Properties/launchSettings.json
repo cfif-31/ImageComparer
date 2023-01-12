@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ImageComparer": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\Users\\Alexandr\\source\\repos\\ImageComparer\\ImageComparer\\bin\\Debug\\net6.0\\1"
+    }
+  }
+}
