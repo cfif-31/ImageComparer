@@ -17,12 +17,16 @@ namespace ImageComparer
                 Console.WriteLine("Directory path not set!");
                 return;
             }
-            string[] arr = Directory.GetFiles(args[0]);
+            string basePath = args[0];
+            string[] arr = Directory.GetFiles(basePath, "*.*", SearchOption.AllDirectories);
             BatchCompareProcessing <Bgra> batchCompare = new(arr, new ComparerProcessor<Bgra>());
             var comparer = batchCompare.CompareProcess();
+            TextWriter writer = File.CreateText("Comare.log");
             foreach(var item in comparer) {
-                Console.WriteLine(string.Join(" ", item.Select(i=>i)));
+                Console.WriteLine(string.Join(" ", item.Select(i => i.Replace(basePath, ""))));
+                writer.WriteLine(string.Join(" ", item.Select(i=>i.Replace(basePath, ""))));
             }
+            writer.Close();
         }
     }
 }
