@@ -5,7 +5,12 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImageComparer", "ImageComparer\ImageComparer.csproj", "{8DC4C442-11FA-4630-A979-9D1B970EA88E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageComparerLibrary", "ImageComparerLibrary\ImageComparerLibrary.csproj", "{1D1C0617-53F8-4A25-8D76-E0CEFC076C6C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImageComparerLibrary", "ImageComparerLibrary\ImageComparerLibrary.csproj", "{1D1C0617-53F8-4A25-8D76-E0CEFC076C6C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F524DFDA-CA29-49AA-8112-7ACE4707E20E}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.md = Readme.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

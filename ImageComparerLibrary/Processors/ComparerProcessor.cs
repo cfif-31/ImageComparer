@@ -5,11 +5,6 @@ namespace ImageComparerLibrary.Processors
 {
     public class ComparerProcessor<T> where T: struct, IColor
     {
-        public virtual bool IsEquals(Image<T, byte> diffImage)
-        {
-            return diffImage.GetSum().IsZero();
-        }
-
         public virtual Image<T, byte>? Compare(Image<T, byte> oneImage, Image<T, byte> twoImage)
         {
             if (oneImage.Width != twoImage.Width || oneImage.Height != twoImage.Height)
